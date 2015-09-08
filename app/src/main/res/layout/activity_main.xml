@@ -1,0 +1,123 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="au.com.deangoddard_17822594.assignment_1.Freind">
+
+    <TextView android:text="@string/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_row="0"
+        android:layout_column="0" />
+
+    <TextView android:text="@string/firstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editFName"
+        android:layout_alignBottom="@+id/editFName"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView4"
+        android:layout_row="0"
+        android:layout_column="1" />
+
+    <EditText android:id="@+id/editPhoneNo"
+        android:inputType="number"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/btnAdd"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_row="0"
+        android:layout_column="4" />
+
+    <Button	  android:id="@+id/btnAdd"
+        android:text="@string/add"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/editFName"
+        android:layout_toEndOf="@+id/btnDelete"
+        android:layout_marginTop="30dp"
+        android:layout_row="0"
+        android:layout_column="5" />
+
+    <Button	  android:id="@+id/btnDelete"
+        android:text="@string/delete"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/btnModify"
+        android:layout_toEndOf="@+id/editFName"
+        android:layout_row="0"
+        android:layout_column="6" />
+
+    <Button   android:id="@+id/btnModify"
+        android:text="@string/modify"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/btnView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp"
+        android:layout_row="0"
+        android:layout_column="7" />
+
+    <Button   android:id="@+id/btnView"
+        android:text="@string/view"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/btnViewAll"
+        android:layout_alignBottom="@+id/btnViewAll"
+        android:layout_alignParentStart="true"
+        android:layout_row="0"
+        android:layout_column="8" />
+
+    <Button   android:id="@+id/btnViewAll"
+        android:text="@string/view_all"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="158dp"
+        android:layout_below="@+id/btnAdd"
+        android:layout_alignParentStart="true"
+        android:layout_row="0"
+        android:layout_column="9" />
+
+    <TextView android:text="@string/lastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_alignTop="@+id/editName"
+        android:layout_alignParentStart="true"
+        android:layout_row="1"
+        android:layout_column="1" />
+
+    <EditText android:id="@+id/editFName"
+        android:inputType="number"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="23dp"
+        android:layout_row="1"
+        android:layout_column="2" />
+
+    <TextView android:text="@string/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editFName"
+        android:layout_alignBottom="@+id/editFName"
+        android:layout_alignEnd="@+id/btnView"
+        android:id="@+id/textView2"
+        android:layout_row="4"
+        android:layout_column="1" />
+
+    <EditText android:id="@+id/editName"
+        android:inputType="text"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/btnModify"
+        android:layout_alignParentStart="true"
+        android:layout_row="5"
+        android:layout_column="1" />
+
+</RelativeLayout>
